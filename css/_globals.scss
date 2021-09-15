@@ -1,3 +1,5 @@
+@import "_mixins";
+
 html {
     font-size: 100%;
 }
@@ -22,6 +24,23 @@ body {
     &-ai-c{
     align-items: center;
 }
+    &-dir-row{
+        flex-direction: row;
+    }
+    &-dir-col{
+        flex-direction: column;
+    }
+
+}
+
+
+
+
+a, a:visited, a:hover {
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
 }
 
 .hide-for-mobile {
