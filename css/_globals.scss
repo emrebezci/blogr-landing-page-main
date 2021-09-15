@@ -1,0 +1,33 @@
+html {
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Overpass', sans-serif;
+}
+
+.flex {
+    display: flex;
+
+    &-jc-sb {
+    justify-content: space-between;
+}
+
+    &-jc-c {
+    justify-content: center;
+}
+
+    &-ai-c{
+    align-items: center;
+}
+}
+
+.hide-for-mobile {
+    @include breakpoint-down()
+}
+
+.hide-for-desktop {
+    @include breakpoint-up()
+}
