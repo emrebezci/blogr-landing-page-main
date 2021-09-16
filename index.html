@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,23 +12,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap" rel="stylesheet">
 
-<!-- font-family: 'Overpass', sans-serif; -->
+    <!-- font-family: 'Overpass', sans-serif; -->
 
     <!-- google fonts  ubuntu-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
 
-<!-- font-family: 'Ubuntu', sans-serif; -->
+    <!-- font-family: 'Ubuntu', sans-serif; -->
 
 
 
 
     <title>Blogr</title>
 </head>
+
 <body>
     <!-- nav mobile -->
-    <nav class="mobile-nav">
+    <nav class="mobile-nav hide-for-desktop">
         <ul class="mobile-ul flex flex-jc-sb flex-ai-c">
             <li><a href=""><img class="mobile-logo" src="/images/logo.svg" alt=""></a></li>
             <li><a href=""><img class="mobile-hamburger" src="/images/icon-hamburger.svg" alt=""></a></li>
@@ -39,5 +41,33 @@
             <button class="learn-btn">Learn More</button>
         </div>
     </nav>
+
+    <!-- isactive mobile -->
+    <nav class="mobile-nav-isactive">
+        <ul class="flex flex-jc-sb flex-ai-c">
+            <li><a href=""><img class="mobile-logo-isactive" src="/images/logo.svg" alt=""></a></li>
+            <li><a href=""><img class="mobile-close" src="/images/icon-close.svg" alt=""></a></li>
+        </ul>
+        <div class="dropdowns">
+            <ul class="flex flex-dir-col">
+                <li><a href="#">Product
+                <img src="/images/icon-arrow-dark.svg" alt="">
+            
+            </a>
+            <div class="dropdown-content">
+                <a href="#">Contact</a>
+                <a href="#">Newsletter</a>
+                <a href="#">LinkedIn</a>
+            </div>
+                </li>
+
+                
+
+                <!-- <li><a href="">Company<img src="/images/icon-arrow-dark.svg" alt=""></a></li>
+                <li><a href="">Connect<img src="/images/icon-arrow-dark.svg" alt=""></a></li> -->
+            </ul>
+        </div>
+    </nav>
 </body>
+
 </html>
