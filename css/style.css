@@ -1,5 +1,5 @@
 html {
-  font-size: 100%;
+  font-size: 16px;
 }
 
 body {
@@ -32,15 +32,110 @@ body {
           align-items: center;
 }
 
-@media (max-width: 375px) {
+.flex-dir-row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.flex-dir-col {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+a, a:visited, a:hover {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+@media (max-width: 750px) {
   .hide-for-mobile {
     display: none;
   }
 }
 
-@media (min-width: 376px) {
+@media (min-width: 751px) {
   .hide-for-desktop {
     display: none;
   }
+}
+
+.mobile-nav {
+  background-image: url("/images/bg-pattern-intro.svg"), -webkit-gradient(linear, left top, left bottom, from(#ff8f70), to(#ff3d54));
+  background-image: url("/images/bg-pattern-intro.svg"), linear-gradient(#ff8f70, #ff3d54);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position-y: 32%;
+  background-position-x: 39%;
+  overflow: hidden;
+  width: 750px;
+  height: 1200px;
+  border-radius: 0px 0px 0px 170px;
+}
+
+.mobile-nav .mobile-ul li a .mobile-logo {
+  margin-top: 125px;
+  width: 165px;
+  height: 64px;
+}
+
+.mobile-nav .mobile-ul li a .mobile-hamburger {
+  margin-top: 125px;
+  margin-right: 48px;
+  width: 65px;
+  height: 40px;
+}
+
+.mobile-nav h1 {
+  margin-top: 250px;
+  font-size: 75px;
+  text-align: center;
+  color: white;
+}
+
+.mobile-nav h3 {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 70px;
+  color: white;
+  font-weight: lighter;
+}
+
+.mobile-nav .mobile-button {
+  margin-top: 110px;
+  text-align: center;
+}
+
+.mobile-nav .mobile-button .start-btn {
+  width: 277px;
+  height: 98px;
+  color: #ff525d;
+  padding: 35px 40px;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 40px 40px 40px 40px;
+  border: none;
+  cursor: pointer;
+}
+
+.mobile-nav .mobile-button .learn-btn {
+  width: 277px;
+  height: 98px;
+  padding: 35px 40px;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 40px 40px 40px 40px;
+  border: none;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  cursor: pointer;
+  margin-left: 30px;
 }
 /*# sourceMappingURL=style.css.map */
