@@ -1,0 +1,73 @@
+.mobile-nav{
+    background-image: url("/images/bg-pattern-intro.svg"), linear-gradient($verylightred, $lightred);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position-y: 32%;
+    background-position-x: 39%;
+    overflow: hidden;
+    width: 750px;
+    height: 1200px;
+    border-radius: 0px 0px 0px 170px;
+    .mobile-ul{
+        li{
+            a{
+                .mobile-logo{
+                    margin-top: 125px;
+                    width: 165px;
+                    height: 64px;
+                    }
+                .mobile-hamburger{
+                    margin-top: 125px;
+                    margin-right: 48px;
+                    width: 65px;
+                    height: 40px;
+                }
+            }
+            
+        }
+    }
+
+    h1{
+        margin-top: 250px;
+        font-size: 75px;
+        text-align: center;
+        color: $white;
+    }
+    h3{
+        text-align: center;
+        font-size: 40px;
+        margin-top: 70px;
+        color: $white;
+        font-weight: lighter;
+    }
+    .mobile-button{
+        margin-top: 110px;
+        text-align: center;
+        .start-btn{
+            width: 277px;
+            height: 98px;
+            color: $lightredcta;
+            padding: 35px 40px;
+            font-size: 30px;
+            font-weight: bold;
+            border-radius: 40px 40px 40px 40px;
+            border: none;
+            cursor: pointer;
+        }
+        .learn-btn{
+            width: 277px;
+            height: 98px;
+            padding: 35px 40px;
+            font-size: 30px;
+            font-weight: bold;
+            border-radius: 40px 40px 40px 40px;
+            border: none;
+            background-color: transparent;
+            border: 2px solid white;
+            color: $white;
+            cursor: pointer;
+            margin-left: 30px;
+
+        }
+    }
+}
