@@ -9,9 +9,9 @@ body {
 }
 
 .flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 
 .flex-jc-sb {
@@ -44,6 +44,15 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.font-bold {
+  font-weight: bolder !important;
+}
+
+.rotate180 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 a, a:visited, a:hover {
@@ -79,17 +88,18 @@ li {
   border-radius: 0px 0px 0px 170px;
 }
 
-.mobile-nav .mobile-ul li a .mobile-logo {
-  margin-top: 125px;
-  width: 165px;
-  height: 64px;
-}
-
-.mobile-nav .mobile-ul li a .mobile-hamburger {
+.mobile-nav .mobile-ul li .mobile-hamburger {
   margin-top: 125px;
   margin-right: 48px;
   width: 50px;
   height: 53px;
+  cursor: pointer;
+}
+
+.mobile-nav .mobile-ul li a .mobile-logo {
+  margin-top: 125px;
+  width: 165px;
+  height: 64px;
 }
 
 .mobile-nav h1 {
@@ -140,6 +150,7 @@ li {
 }
 
 .mobile-nav-isactive {
+  display: none;
   background-image: url("/images/bg-pattern-intro.svg"), -webkit-gradient(linear, left top, left bottom, from(#ff8f70), to(#ff3d54));
   background-image: url("/images/bg-pattern-intro.svg"), linear-gradient(#ff8f70, #ff3d54);
   background-position: center;
@@ -180,15 +191,19 @@ li {
   font-weight: bold;
 }
 
+.mobile-nav-isactive .dropdowns ul li a {
+  font-weight: lighter;
+  color: #4b5862;
+}
+
 .mobile-nav-isactive .dropdowns ul li a img {
   width: 20px;
   height: 13px;
+  margin-bottom: 5px;
 }
 
-.mobile-nav-isactive .dropdowns ul .dropdown-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.mobile-nav-isactive .dropdowns ul .dropdown-content-product {
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -203,7 +218,53 @@ li {
   z-index: 1;
 }
 
-.mobile-nav-isactive .dropdowns ul .dropdown-content a {
+.mobile-nav-isactive .dropdowns ul .dropdown-content-product a {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 10px 20px;
+}
+
+.mobile-nav-isactive .dropdowns ul .dropdown-content-company {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 550px;
+  height: 300px;
+  margin-top: 55px;
+  background-color: #c8c8cb;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1;
+  display: none;
+}
+
+.mobile-nav-isactive .dropdowns ul .dropdown-content-company a {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 10px 20px;
+}
+
+.mobile-nav-isactive .dropdowns ul .dropdown-content-connect {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 550px;
+  height: 300px;
+  margin-top: 55px;
+  background-color: #c8c8cb;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1;
+}
+
+.mobile-nav-isactive .dropdowns ul .dropdown-content-connect a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
