@@ -28,11 +28,11 @@
 </head>
 
 <body>
-    <!-- nav mobile -->
-    <nav class="mobile-nav hide-for-desktop">
+    <!-- NAV MOBILE HAMBURGER -->
+    <nav class="mobile-nav" id="mobile-nav">
         <ul class="mobile-ul flex flex-jc-sb flex-ai-c">
             <li><a href=""><img class="mobile-logo" src="/images/logo.svg" alt=""></a></li>
-            <li><a href=""><img class="mobile-hamburger" src="/images/icon-hamburger.svg" alt=""></a></li>
+            <li><img class="mobile-hamburger" src="/images/icon-hamburger.svg" onclick="hamburgeropen()" alt=""></li>
         </ul>
         <h1>A modern <br> publishing platform</h1>
         <h3>Grow your audience and build your <br> online brand</h3>
@@ -42,32 +42,65 @@
         </div>
     </nav>
 
-    <!-- isactive mobile -->
-    <nav class="mobile-nav-isactive">
+
+
+
+
+
+    <!-- IS ACTIVE MOBILE -->
+    <nav class="mobile-nav-isactive" id="mobile-nav-isactive">
         <ul class="flex flex-jc-sb flex-ai-c">
             <li><a href=""><img class="mobile-logo-isactive" src="/images/logo.svg" alt=""></a></li>
-            <li><a href=""><img class="mobile-close" src="/images/icon-close.svg" alt=""></a></li>
+            <li><a href="javascript:void(0)"><img class="mobile-close" onclick="hamburgerClose()"
+                        src="/images/icon-close.svg" alt=""></a></li>
         </ul>
         <div class="dropdowns">
             <ul class="flex flex-dir-col">
-                <li><a href="#">Product
-                <img src="/images/icon-arrow-dark.svg" alt="">
-            
-            </a>
-            <div class="dropdown-content">
-                <a href="#">Contact</a>
-                <a href="#">Newsletter</a>
-                <a href="#">LinkedIn</a>
-            </div>
+                <!-- product dropdown -->
+                <li><a onclick="changeFlex()" class="dropdown-product" href="javascript:void(0)"
+                        id="dropdown-product">Product
+                        <img id="product-img" src="/images/icon-arrow-dark.svg" alt="">
+
+                    </a>
+                    <div class="dropdown-content-product" id="dropdown-content-product">
+                        <a href="#">Lorem</a>
+                        <a href="#">Lorem1</a>
+                        <a href="#">Lorem2</a>
+                    </div>
+                </li>
+                <!-- company dropdown -->
+                <li><a onclick="changeFlexcompany()" id="dropdown-company" href="javascript:void(0)">Company
+                        <img id="company-img" src="/images/icon-arrow-dark.svg" alt="">
+
+                    </a>
+                    <div class="dropdown-content-company" id="dropdown-content-company">
+                        <a href="#">Lorem3</a>
+                        <a href="#">Lorem4</a>
+                        <a href="#">Lorem5</a>
+                    </div>
                 </li>
 
-                
+                <!-- connect dropdown -->
+
+                <li><a href="javascript:void(0)" onclick="changeFlexconnect()" id="dropdown-connect">Connect
+                        <img id="connect-img" src="/images/icon-arrow-dark.svg" alt="">
+
+                    </a>
+                    <div class="dropdown-content-connect" id="dropdown-content-connect">
+                        <a href="#">Contact</a>
+                        <a href="#">Newsletter</a>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                </li>
+
+
 
                 <!-- <li><a href="">Company<img src="/images/icon-arrow-dark.svg" alt=""></a></li>
                 <li><a href="">Connect<img src="/images/icon-arrow-dark.svg" alt=""></a></li> -->
             </ul>
         </div>
     </nav>
+    <script src="/js/main.js"></script>
 </body>
 
 </html>
