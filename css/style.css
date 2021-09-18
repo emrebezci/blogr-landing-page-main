@@ -76,6 +76,7 @@ li {
 }
 
 .mobile-nav {
+  display: none;
   background-image: url("/images/bg-pattern-intro.svg"), -webkit-gradient(linear, left top, left bottom, from(#ff8f70), to(#ff3d54));
   background-image: url("/images/bg-pattern-intro.svg"), linear-gradient(#ff8f70, #ff3d54);
   background-position: center;
@@ -150,7 +151,7 @@ li {
 }
 
 .mobile-nav-isactive {
-  display: none;
+  display: block;
   background-image: url("/images/bg-pattern-intro.svg"), -webkit-gradient(linear, left top, left bottom, from(#ff8f70), to(#ff3d54));
   background-image: url("/images/bg-pattern-intro.svg"), linear-gradient(#ff8f70, #ff3d54);
   background-position: center;
@@ -191,9 +192,14 @@ li {
   font-weight: bold;
 }
 
-.mobile-nav-isactive .dropdowns ul li a {
+.mobile-nav-isactive .dropdowns ul li div {
+  cursor: pointer;
   font-weight: lighter;
   color: #4b5862;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .mobile-nav-isactive .dropdowns ul li a img {
