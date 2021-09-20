@@ -28,84 +28,145 @@
 </head>
 
 <body>
-    <!-- NAV MOBILE HAMBURGER -->
-    <nav class="mobile-nav" id="mobile-nav">
-        <ul class="mobile-ul flex flex-jc-sb flex-ai-c">
-            <li><a href=""><img class="mobile-logo" src="/images/logo.svg" alt=""></a></li>
-            <li><img class="mobile-hamburger" src="/images/icon-hamburger.svg" onclick="hamburgeropen()" alt=""></li>
-        </ul>
-        <h1>A modern <br> publishing platform</h1>
-        <h3>Grow your audience and build your <br> online brand</h3>
-        <div class="mobile-button">
-            <button class="start-btn">Start for Free</button>
-            <button class="learn-btn">Learn More</button>
-        </div>
-    </nav>
+    <div class="container-nav hide-for-desktop">
+
+
+        <!-- NAV MOBILE HAMBURGER -->
+        <nav class="mobile-nav" id="mobile-nav">
+            <ul class="mobile-ul flex flex-jc-sb flex-ai-c">
+                <li><a href=""><img class="mobile-logo" src="/images/logo.svg" alt=""></a></li>
+                <li><img class="mobile-hamburger" src="/images/icon-hamburger.svg" onclick="hamburgeropen()" alt="">
+                </li>
+            </ul>
+            <h1>A modern <br> publishing platform</h1>
+            <h3>Grow your audience and build your <br> online brand</h3>
+            <div class="mobile-button">
+                <button class="start-btn">Start for Free</button>
+                <button class="learn-btn">Learn More</button>
+            </div>
+        </nav>
 
 
 
 
 
 
-    <!-- IS ACTIVE MOBILE -->
-    <nav class="mobile-nav-isactive" id="mobile-nav-isactive">
-        <ul class="flex flex-jc-sb flex-ai-c">
-            <li><a href=""><img class="mobile-logo-isactive" src="/images/logo.svg" alt=""></a></li>
-            <li><img class="mobile-close" onclick="hamburgerClose()"
-                        src="/images/icon-close.svg" alt=""></li>
-        </ul>
-        <div class="dropdowns">
-            <ul class="flex flex-dir-col">
-                <!-- product dropdown -->
-                <li><div onclick="changeFlex()" class="dropdown-product" 
-                        id="dropdown-product">Product
-                        <img id="product-img" src="/images/icon-arrow-dark.svg" alt="">
+        <!-- IS ACTIVE MOBILE -->
+        <nav class="mobile-nav-isactive" id="mobile-nav-isactive">
+            <ul class="flex flex-jc-sb flex-ai-c">
+                <li><a href=""><img class="mobile-logo-isactive" src="/images/logo.svg" alt=""></a></li>
+                <li><img class="mobile-close" onclick="hamburgerClose()" src="/images/icon-close.svg" alt=""></li>
+            </ul>
+            <div class="dropdowns">
+                <ul class="flex flex-dir-col">
+                    <!-- product dropdown -->
+                    <li>
+                        <div onclick="changeFlex()" class="dropdown-product" id="dropdown-product">Product
+                            <img id="product-img" src="/images/icon-arrow-dark.svg" alt="">
 
-                </div>
-                    <div class="dropdown-content-product" id="dropdown-content-product">
-                        <a href="#">Lorem</a>
+                        </div>
+                        <div class="dropdown-content-product" id="dropdown-content-product">
+                            <a href="#">Lorem</a>
+                            <a href="#">Lorem1</a>
+                            <a href="#">Lorem2</a>
+                        </div>
+                    </li>
+                    <!-- company dropdown -->
+                    <li>
+                        <div onclick="changeFlexcompany()" id="dropdown-company">Company
+                            <img id="company-img" src="/images/icon-arrow-dark.svg" alt="">
+
+                        </div>
+                        <div class="dropdown-content-company" id="dropdown-content-company">
+                            <a href="#">Lorem3</a>
+                            <a href="#">Lorem4</a>
+                            <a href="#">Lorem5</a>
+                        </div>
+                    </li>
+
+                    <!-- connect dropdown -->
+
+                    <li>
+                        <div onclick="changeFlexconnect()" id="dropdown-connect">Connect
+                            <img id="connect-img" src="/images/icon-arrow-dark.svg" alt="">
+
+                        </div>
+                        <div class="dropdown-content-connect" id="dropdown-content-connect">
+                            <a href="#">Contact</a>
+                            <a href="#">Newsletter</a>
+                            <a href="#">LinkedIn</a>
+                        </div>
+                        <hr>
+                    </li>
+                    <div class="active-mobile-buttons">
+                        <button class="mobile-active-login-button">Login</button>
+                        <button class="mobile-active-signup-button">Sign Up</button>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+    <!-- desktop nav start -->
+
+    <div class="desktop-nav">
+        <ul class="flex flex-dir-row">
+            <li>
+                <a href="">
+                    <img class="desktop-logo" src="/images/logo.svg" alt="">
+                </a>
+            </li>
+            <li>
+                <div class="dropdown-product">
+                    <a href="" class="dropbtn-product">Product <img src="/images/icon-arrow-light.svg" alt=""></a>
+                    <div class="dropdown-content-product">
                         <a href="#">Lorem1</a>
                         <a href="#">Lorem2</a>
-                    </div>
-                </li>
-                <!-- company dropdown -->
-                <li><div onclick="changeFlexcompany()" id="dropdown-company" >Company
-                        <img id="company-img" src="/images/icon-arrow-dark.svg" alt="">
-
-                </div>
-                    <div class="dropdown-content-company" id="dropdown-content-company">
                         <a href="#">Lorem3</a>
+                    </div>
+                </div>
+            </li>
+
+
+            <li>
+                <div class="dropdown-company">
+                    <a href="" class="dropbtn-company">Company <img src="/images/icon-arrow-light.svg" alt=""></a>
+                    <div class="dropdown-content-company">
                         <a href="#">Lorem4</a>
                         <a href="#">Lorem5</a>
+                        <a href="#">Lorem6</a>
                     </div>
-                </li>
-
-                <!-- connect dropdown -->
-
-                <li><div onclick="changeFlexconnect()" id="dropdown-connect">Connect
-                        <img id="connect-img" src="/images/icon-arrow-dark.svg" alt="">
-
                 </div>
-                    <div class="dropdown-content-connect" id="dropdown-content-connect">
+            </li>
+
+
+            <li>
+                <div class="dropdown-connect">
+                    <a href="" class="dropbtn-connect">Connect <img src="/images/icon-arrow-light.svg" alt=""></a>
+                    <div class="dropdown-content-connect">
                         <a href="#">Contact</a>
                         <a href="#">Newsletter</a>
                         <a href="#">LinkedIn</a>
                     </div>
-                    <hr>
-                </li>
-                <div class="active-mobile-buttons">
-                    <button class="mobile-active-login-button">Login</button>
-                    <button class="mobile-active-singup-button">Sign Up</button>
                 </div>
-                
+            </li>
+            <li>
+                <div class="desktop-nav-buttons">
+                    <button class="desktop-nav-login-button">Login</button>
+                    <button class="desktop-nav-signup-button">Sign Up</button>
+                </div>
+            </li>
+            
+            
+
+            
+        </ul>
+    </div>
 
 
 
-                <!-- <li><a href="">Company<img src="/images/icon-arrow-dark.svg" alt=""></a></li>
-                <li><a href="">Connect<img src="/images/icon-arrow-dark.svg" alt=""></a></li> -->
-            </ul>
-        </div>
-    </nav>
+
     <script src="/js/main.js"></script>
 </body>
 

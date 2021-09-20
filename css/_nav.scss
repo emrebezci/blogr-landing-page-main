@@ -1,13 +1,13 @@
 // mobile not active
 
 .mobile-nav{
-    display: none;
+    display: block;
     background-image: url("/images/bg-pattern-intro.svg"), linear-gradient($verylightred, $lightred);
     background-position: center;
     background-repeat: no-repeat;
     background-position-y: 32%;
     background-position-x: 39%;
-    overflow: hidden;
+    overflow:auto;
     width: 750px;
     height: 1200px;
     border-radius: 0px 0px 0px 170px;
@@ -81,13 +81,13 @@
 // mobile is active
 
 .mobile-nav-isactive{
-    display: block;
+    display: none;
     background-image: url("/images/bg-pattern-intro.svg"), linear-gradient($verylightred, $lightred);
     background-position: center;
     background-repeat: no-repeat;
     background-position-y: 32%;
     background-position-x: 39%;
-    
+    overflow: auto;
     width: 750px;
     height: auto;
     border-radius: 0px 0px 0px 170px;
@@ -210,9 +210,9 @@
             
             
                 }
-                .mobile-active-singup-button{
-                    
-                    width: 277px;
+                .mobile-active-signup-button{
+            margin-bottom: 60px;
+            width: 277px;
             height: 98px;
             padding: 35px 40px;
             font-size: 30px;
@@ -223,9 +223,9 @@
             cursor: pointer;
             color: black;
             background: #7E8AC6;
-            background: -webkit-linear-gradient(left, $verylightred, $lightred);
-            background: -moz-linear-gradient(left, $verylightred, $lightred);
-            background: linear-gradient(left, $verylightred, $lightred);
+            background: -webkit-linear-gradient(to right, $verylightred, $lightred);
+            background: -moz-linear-gradient(to right, $verylightred, $lightred);
+            background: linear-gradient(to right, $verylightred, $lightred);
                 }
             }
         }
@@ -234,4 +234,150 @@
 
 }
 
+
+// desktop nav start
+
+
+.desktop-nav{
+    background-image: url("/images/bg-pattern-intro.svg"), linear-gradient(left,$verylightred, $lightred);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position-x: 22%;
+    background-position-y: 50%;
+    overflow: auto;
+    width: auto;
+    height: 600px;
+    ul{
+        margin-top: 65px;
+        
+        li{
+            
+            display: inline-flex;
+            align-items: center;
+            
+
+            
+            .desktop-logo{
+                margin-left: 168px;
+                margin-right: 65px;
+            }
+            margin-right: 33px;
+            .dropdown-product{
+                position: relative;
+                display: inline-block;
+                &:hover .dropdown-content-product 
+                {
+                    display: block;
+                }
+                .dropbtn-product {
+                color: white;
+                font-size: 16px;
+                border: none;
+                
+                
+                }
+                .dropdown-content-product {
+                    display: none;
+                    position: absolute;
+                    z-index: 1;
+                a{
+                    color: white;
+                    text-decoration: none;
+                    display: block;
+                    margin-top: 15px;
+                }
+                }
+            }
+
+            .dropdown-company{
+                position: relative;
+                display: inline-block;
+                &:hover .dropdown-content-company 
+                {
+                    display: block;
+                }
+                .dropbtn-company {
+                color: white;
+                font-size: 16px;
+                border: none;
+                }
+                .dropdown-content-company {
+                    display: none;
+                    position: absolute;
+                    z-index: 1;
+                a{
+                    color: white;
+                    text-decoration: none;
+                    display: block;
+                    margin-top: 15px;
+                }
+                }
+            }
+
+
+            .dropdown-connect{
+                position: relative;
+                display: inline-block;
+                &:hover .dropdown-content-connect 
+                {
+                    display: block;
+                }
+                
+                .dropbtn-connect {
+                color: white;
+                font-size: 16px;
+                border: none;
+                }
+                .dropdown-content-connect {
+                    display: none;
+                    position: absolute;
+                    z-index: 1;
+                    
+                a{
+                    color: white;
+                    text-decoration: none;
+                    display: block;
+                    margin-top: 15px;
+
+                }
+                }
+            }
+            
+
+ .desktop-nav-buttons{
+    display: flex;
+    flex-direction: row;
+    
+     
+.desktop-nav-login-button{
+        
+            width: 140px;
+            height: 50px;
+            font-size: $fs;
+            font-weight: bold;
+            border-radius: 40px 40px 40px 40px;
+            border: none;
+            background-color: transparent;
+            color: $verydarkgrayishblue;
+            cursor: pointer;
+            color: $white;
+                }
+                .desktop-nav-signup-button{
+            width: 140px;
+            height: 50px;
+            font-size: $fs;
+            font-weight: bold;
+            border-radius: 40px 40px 40px 40px;
+            border: none;
+            cursor: pointer;
+            color: $lightred;
+            background-color: $white;
+            
+            }
+ }
+                
+        }
+    }
+    
+}
 

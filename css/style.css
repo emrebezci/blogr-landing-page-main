@@ -76,14 +76,14 @@ li {
 }
 
 .mobile-nav {
-  display: none;
+  display: block;
   background-image: url("/images/bg-pattern-intro.svg"), -webkit-gradient(linear, left top, left bottom, from(#ff8f70), to(#ff3d54));
   background-image: url("/images/bg-pattern-intro.svg"), linear-gradient(#ff8f70, #ff3d54);
   background-position: center;
   background-repeat: no-repeat;
   background-position-y: 32%;
   background-position-x: 39%;
-  overflow: hidden;
+  overflow: auto;
   width: 750px;
   height: 1200px;
   border-radius: 0px 0px 0px 170px;
@@ -151,13 +151,14 @@ li {
 }
 
 .mobile-nav-isactive {
-  display: block;
+  display: none;
   background-image: url("/images/bg-pattern-intro.svg"), -webkit-gradient(linear, left top, left bottom, from(#ff8f70), to(#ff3d54));
   background-image: url("/images/bg-pattern-intro.svg"), linear-gradient(#ff8f70, #ff3d54);
   background-position: center;
   background-repeat: no-repeat;
   background-position-y: 32%;
   background-position-x: 39%;
+  overflow: auto;
   width: 750px;
   height: auto;
   border-radius: 0px 0px 0px 170px;
@@ -321,7 +322,8 @@ li {
   cursor: pointer;
 }
 
-.mobile-nav-isactive .dropdowns ul .active-mobile-buttons .mobile-active-singup-button {
+.mobile-nav-isactive .dropdowns ul .active-mobile-buttons .mobile-active-signup-button {
+  margin-bottom: 60px;
   width: 277px;
   height: 98px;
   padding: 35px 40px;
@@ -334,6 +336,156 @@ li {
   color: black;
   background: #7E8AC6;
   background: -webkit-gradient(linear, left top, right top, from(#ff8f70), to(#ff3d54));
-  background: linear-gradient(left, #ff8f70, #ff3d54);
+  background: linear-gradient(to right, #ff8f70, #ff3d54);
+}
+
+.desktop-nav {
+  background-image: url("/images/bg-pattern-intro.svg"), -webkit-gradient(linear, left top, right top, from(#ff8f70), to(#ff3d54));
+  background-image: url("/images/bg-pattern-intro.svg"), linear-gradient(left, #ff8f70, #ff3d54);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position-x: 22%;
+  background-position-y: 50%;
+  overflow: auto;
+  width: auto;
+  height: 600px;
+}
+
+.desktop-nav ul {
+  margin-top: 65px;
+}
+
+.desktop-nav ul li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 33px;
+}
+
+.desktop-nav ul li .desktop-logo {
+  margin-left: 168px;
+  margin-right: 65px;
+}
+
+.desktop-nav ul li .dropdown-product {
+  position: relative;
+  display: inline-block;
+}
+
+.desktop-nav ul li .dropdown-product:hover .dropdown-content-product {
+  display: block;
+}
+
+.desktop-nav ul li .dropdown-product .dropbtn-product {
+  color: white;
+  font-size: 16px;
+  border: none;
+}
+
+.desktop-nav ul li .dropdown-product .dropdown-content-product {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.desktop-nav ul li .dropdown-product .dropdown-content-product a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin-top: 15px;
+}
+
+.desktop-nav ul li .dropdown-company {
+  position: relative;
+  display: inline-block;
+}
+
+.desktop-nav ul li .dropdown-company:hover .dropdown-content-company {
+  display: block;
+}
+
+.desktop-nav ul li .dropdown-company .dropbtn-company {
+  color: white;
+  font-size: 16px;
+  border: none;
+}
+
+.desktop-nav ul li .dropdown-company .dropdown-content-company {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.desktop-nav ul li .dropdown-company .dropdown-content-company a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin-top: 15px;
+}
+
+.desktop-nav ul li .dropdown-connect {
+  position: relative;
+  display: inline-block;
+}
+
+.desktop-nav ul li .dropdown-connect:hover .dropdown-content-connect {
+  display: block;
+}
+
+.desktop-nav ul li .dropdown-connect .dropbtn-connect {
+  color: white;
+  font-size: 16px;
+  border: none;
+}
+
+.desktop-nav ul li .dropdown-connect .dropdown-content-connect {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.desktop-nav ul li .dropdown-connect .dropdown-content-connect a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin-top: 15px;
+}
+
+.desktop-nav ul li .desktop-nav-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.desktop-nav ul li .desktop-nav-buttons .desktop-nav-login-button {
+  width: 140px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 40px 40px 40px 40px;
+  border: none;
+  background-color: transparent;
+  color: #4b5862;
+  cursor: pointer;
+  color: white;
+}
+
+.desktop-nav ul li .desktop-nav-buttons .desktop-nav-signup-button {
+  width: 140px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 40px 40px 40px 40px;
+  border: none;
+  cursor: pointer;
+  color: #ff3d54;
+  background-color: white;
 }
 /*# sourceMappingURL=style.css.map */
