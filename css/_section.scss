@@ -1,0 +1,63 @@
+// desktop section
+
+
+
+    .first-desktop-article{
+        overflow: hidden;
+        h1{
+            text-align: center;
+            margin-top: 160px;
+        }
+        .articles{
+            display: flex;
+            flex-direction: row;
+            
+            .desktop-article-paragraph{
+                margin-left: 165px;
+                width: 550px;
+                height: 200px;
+                .first-h{
+                    margin-top: 127px;
+                    
+                }
+                .second-h{
+                    margin-top: 90px;
+                }
+            }
+            .desktop-pic{
+                .desktop-article-pic{
+                width: 100%;
+                height: auto;
+                margin-left: 30%;
+                margin-top: -17%;
+            }
+            }
+        }
+    }
+
+
+
+// mobile section
+
+.first-mobile-article{
+    .mobile-section-h1{
+        text-align: center;
+        margin-top: 215px;
+        font-size: 50px;
+    }
+    .mobile-section-img{
+        width: 100%;
+        margin-top: 110px;
+    }
+    .mobile-article-paragraph{
+        
+        text-align: center;
+        
+        .mobile-section-h1-2{
+            font-size: 35px;
+        }
+        p{
+            font-size: 36px;
+        }
+    }
+}
