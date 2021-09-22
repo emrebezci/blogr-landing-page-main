@@ -648,4 +648,83 @@ article .second-mobile-article {
   border-radius: 0px 100px 0px 100px;
   height: 1250px;
 }
+
+.desktop-footer-container {
+  background-color: #25252d;
+  overflow: hidden;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 0px 150px 0px 0px;
+}
+
+.desktop-footer-container .jcc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.desktop-footer-container .logo {
+  margin-left: 100px;
+  margin-top: 80px;
+  margin-right: 5%;
+}
+
+.desktop-footer-container .footer-product {
+  margin-top: 80px;
+  margin-left: 5%;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.desktop-footer-container .footer-product h2 {
+  margin-bottom: 50px;
+}
+
+.desktop-footer-container .footer-product li {
+  margin-top: 15px;
+}
+
+.desktop-footer-container .footer-company {
+  margin-top: 80px;
+  margin-left: 5%;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.desktop-footer-container .footer-company h2 {
+  margin-bottom: 50px;
+}
+
+.desktop-footer-container .footer-company li {
+  margin-top: 15px;
+}
+
+.desktop-footer-container .footer-connect {
+  margin-top: 80px;
+  margin-left: 5%;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.desktop-footer-container .footer-connect h2 {
+  margin-bottom: 50px;
+}
+
+.desktop-footer-container .footer-connect li {
+  margin-top: 15px;
+}
 /*# sourceMappingURL=style.css.map */

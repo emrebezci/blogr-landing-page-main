@@ -1,0 +1,54 @@
+// desktop footer start
+
+.desktop-footer-container{
+    background-color: $verydarkblackblue;
+    overflow: hidden;
+    color: $white;
+    display: flex;
+    border-radius: 0px 150px 0px 0px;
+    .jcc{
+        display: flex;
+        justify-content: center;
+    }
+    .logo{
+            margin-left: 100px;
+            margin-top: 80px;
+            margin-right: 5%;
+        }
+    .footer-product{
+        margin-top: 80px;
+        margin-left: 5%;
+        cursor: pointer;
+        user-select: none;
+        h2{
+            margin-bottom: 50px;
+        }
+        li{
+            margin-top: 15px;
+        }
+    }
+    .footer-company{
+        margin-top: 80px;
+        margin-left: 5%;
+        cursor: pointer;
+        user-select: none;
+        h2{
+            margin-bottom: 50px;
+        }
+        li{
+            margin-top: 15px;
+        }
+    }
+    .footer-connect{
+        margin-top: 80px;
+        margin-left: 5%;
+        cursor: pointer;
+        user-select: none;
+        h2{
+            margin-bottom: 50px;
+        }
+        li{
+            margin-top: 15px;
+        }
+    }
+}
