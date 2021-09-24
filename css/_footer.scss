@@ -4,17 +4,19 @@
     background-color: $verydarkblackblue;
     overflow: hidden;
     color: $white;
-    display: flex;
+
     border-radius: 0px 150px 0px 0px;
+        .logo{
+            margin-top: 80px;
+            margin-right: 25%;
+            margin-left: 100px;
+        }
     .jcc{
         display: flex;
         justify-content: center;
+        margin-top: -7%;
     }
-    .logo{
-            margin-left: 100px;
-            margin-top: 80px;
-            margin-right: 5%;
-        }
+
     .footer-product{
         margin-top: 80px;
         margin-left: 5%;
@@ -52,3 +54,49 @@
         }
     }
 }
+// desktop footer end
+
+
+// mobile footer start
+.footer{
+    width: 750px;
+    height: auto;
+    overflow: hidden;
+    background-color: $verydarkblackblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: $white;
+    font-size: 35px;
+    img{
+        margin-top: 75px;
+        cursor: pointer;
+    }
+    .mobile-footer-product{
+        cursor: pointer;
+        margin-top: 120px;
+        li{
+            margin-top: 15px;
+        }
+    }
+
+    .mobile-footer-company{
+        cursor: pointer;
+        margin-top: 80px;
+        li{
+            margin-top: 15px;
+        }
+    }
+
+    .mobile-footer-connect{
+        cursor: pointer;
+        margin-top: 80px;
+        li{
+            margin-top: 15px;
+        }
+    }
+}
+
+
+// mobile footer end

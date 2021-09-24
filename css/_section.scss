@@ -129,25 +129,67 @@
     }
 }
 
-article{
 
-        .mobile-article-phones-img{
-        margin-left: 19%;
-        z-index: 1;
-        margin-bottom: -70%;  
-        
+.second-mobile-article{
+        display: flex;
+        flex-direction: column;
+        margin-top: 190px;
+        background-image: url("/images/bg-pattern-circles.svg"), linear-gradient($verydarkdesaturatedblue, $verydarkgrayblue);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-position-y: -600%;
+        background-position-x: 50%;
+        width: 100%;
+        border-radius: 0px 100px 0px 100px;
+        height: auto;
+        width: 750px;
+        .img-div{
+            img{
+            margin-left: 5%;
+            margin-top: -10%;
+        }
+        }
+        .paragraph-div{
+            text-align: center;
+            justify-content: center;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-bottom: 10%;
+            
+            h1{
+                color: $white;
+                font-size: 40px;
+            }
+            p{
+                font-size: 35px;
+               color: $white;
+            
+            }
+        }
     }
 
-        .second-mobile-article{
-    background-image: url("/images/bg-pattern-circles.svg"), linear-gradient($verydarkdesaturatedblue, $verydarkgrayblue);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-position-y: -90%;
-    background-position-x: 50%;
+.third-mobile-article{
     width: 750px;
-    border-radius: 0px 100px 0px 100px;
-    height: 1250px;
-    
-}
-    
+    overflow: hidden;
+    .third-mobile-paragraph{
+        text-align: center;
+        
+        img{
+            width: 100%;
+            min-width: 800px;
+            min-height: 400px;
+            margin-top: 98px;
+        }
+                h1{
+            margin-left: 10%;
+            margin-right: 10%;
+            font-size: 50px;
+        }
+        p{
+            margin-left: 10%;
+            margin-right: 10%;
+            font-size: 35px;
+            
+        }
+    }
 }
